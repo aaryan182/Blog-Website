@@ -51,6 +51,10 @@ app.post("/compose", function (req,res) {
   res.redirect("/")
 
 })
+
+app.get('/posts/:postName', function(req, res)  {  // makes dynamic website urls using express
+console.log(req.params.postName );
+});
  
 
 
